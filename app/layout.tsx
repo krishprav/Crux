@@ -2,6 +2,11 @@
 import type { Metadata } from "next";
 import { Patrick_Hand } from "next/font/google";
 import "./globals.css";
+import {  ClerkProvider } from '@clerk/nextjs'
+import Header from "@/components/common/header";
+import {Footer} from "@/components/common/footer";
+import { Web3Provider } from '@/context/Web3Context';
+
 
 const fontHand = Patrick_Hand({
   variable: "--font-hand",
@@ -20,10 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<html lang="en" className={fontHand.variable}>
-  <body className="font-hand antialiased">
-        {children}
+    <ClerkProvider>
+          <Web3Provider>
+<html lang="en">
+      <body className={`${fontHand.variable} font-sans antialiased`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
+    </Web3Provider>
+    </ClerkProvider>
   );
 }

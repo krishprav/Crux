@@ -1,0 +1,60 @@
+|-- app
+    |-- globals.css
+    |-- layout.tsx
+    |-- page.tsx
+    |-- sign-in
+        |-- [[...sign-in]]
+            |-- page.tsx
+    |-- sign-up
+        |-- [[...sign-up]]
+            |-- page.tsx
+    |-- (logged-in)
+        |-- upload
+            |-- page.tsx
+|-- public
+    |-- globe.svg
+    |-- file.svg
+    |-- next.svg
+    |-- vercel.svg
+    |-- window.svg
+|-- .gitignore
+|-- next-env.d.ts
+|-- eslint.config.mjs
+|-- next.config.ts
+|-- postcss.config.mjs
+|-- README.md
+|-- tsconfig.json
+|-- package.json
+|-- package-lock.json
+|-- components.json
+|-- lib
+    |-- utils.ts
+|-- components
+    |-- ui
+        |-- button.tsx
+        |-- aibutton.tsx
+        |-- MacOSWindow.tsx
+        |-- badge.tsx
+        |-- pricing-card.tsx
+        |-- progress.tsx
+        |-- input.tsx
+    |-- common
+        |-- header.tsx
+        |-- footer.tsx
+        |-- nav-link.tsx
+    |-- home
+        |-- hero-section.tsx
+        |-- demo-section.tsx
+        |-- how-it-works-section.tsx
+        |-- document-journey-section.tsx
+        |-- pricing-section.tsx
+    |-- upload
+        |-- upload-form-input.tsx
+        |-- upload-form.tsx
+        |-- upload-header.tsx
+        |-- UploadArea.tsx
+        |-- FilePreview.tsx
+        |-- UploadProgress.tsx
+        |-- UploadButton.tsx
+|-- .env.local
+|-- middleware.ts
